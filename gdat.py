@@ -28,15 +28,15 @@ def check_vulnerability(browser, target, dork):
 	try:
 		#Search for reCaptcha
 		browser.find_element_by_id('captcha-form')
-		input('Google is trying to block you... solve captcha and hit enter when ready.')
+		input('\nGoogle is trying to block you... solve captcha and hit enter when ready.\n')
 	except:
 			dork = dork.strip()
-		try:
-			browser.find_element_by_id('resultStats')
-			print(bg(1)+fg(15)+"[ *** VULNERABILITY DETECTED! *** ] - %s site:%s"%(dork, target)+fg.rs+bg.rs)
-			output.append('%s site:%s'%(dork, target))
-		except:
-			print('Dork failed - %s site:%s'%(dork, target))
+			try:
+				browser.find_element_by_id('resultStats')
+				print(bg(1)+fg(15)+"[ *** VULNERABILITY DETECTED! *** ] - %s site:%s"%(dork, target)+fg.rs+bg.rs)
+				output.append('%s site:%s'%(dork, target))
+			except:
+				print('Dork failed - %s site:%s'%(dork, target))
 
 
 for dork in dorks:
