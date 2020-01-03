@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('-u', '--url', help='target domain name', dest='target', required=True)
+args 	= parser.parse_args()
+target 	= args.target
+
 import sys
 import time
 import pickle
-import argparse
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -17,7 +22,6 @@ options.add_experimental_option("prefs", {"profile.default_content_setting_value
 browser = webdriver.Chrome(options=options)
 
 dorks 	= open('dorks.txt', 'r')
-target 	= ''
 query 	= 'https://www.google.com/search?ei=Rar6XdWJDe2g5OUPvs2MmAM&q='
 
 
