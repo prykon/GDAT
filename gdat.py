@@ -6,8 +6,6 @@ args 	= parser.parse_args()
 target 	= args.target
 
 import sys
-import time
-import pickle
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
