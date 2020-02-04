@@ -1,7 +1,10 @@
 # GDAT - Google Dork Automated Tool
 
 ## Instructions:
-1. Run the gdat.py script from a command line adding the parameter -u or --url with the target url
+1. Install requirements
+```pip install -r requirements.txt```
+
+2. Run the gdat.py script from a command line adding the parameter -u or --url with the target url
 
 **Example:**
 ```python gdat.py -u example.com```

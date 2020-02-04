@@ -1,0 +1,5 @@
+argparse
+requests
+beautifulsoup4
+selenium
+sty
