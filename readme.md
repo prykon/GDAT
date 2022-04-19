@@ -1,4 +1,6 @@
 # GDAT - Google Dork Automated Tool
+Automatize your Google Dork vulnerability search for aprox. 4200 vulns!
+
 
 ## Instructions:
 1. Install requirements
